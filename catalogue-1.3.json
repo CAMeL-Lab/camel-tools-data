@@ -465,6 +465,16 @@
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/disambig_mle_calima-msa-r13-0.2.5.zip",
             "version": "0.2.5"
         },
+        "light": {
+            "dependencies": [
+                "morphology-db-all",
+                "disambig-mle-all"
+            ],
+            "description": "Datasets for morphology and MLE disambiguation only.",
+            "name": "light",
+            "package_type": "meta",
+            "private": false
+        },
         "morphology-db-all": {
             "dependencies": [
                 "morphology-db-msa-r13",
