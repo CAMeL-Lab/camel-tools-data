@@ -60,7 +60,7 @@
                 "disambig-mle-all",
                 "sentiment-analysis-all",
                 "ner-all",
-                "dialect-id-all"
+                "dialectid-all"
             ],
             "description": "All available CAMeL Tools packages",
             "name": "all",
