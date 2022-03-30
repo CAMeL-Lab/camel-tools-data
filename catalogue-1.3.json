@@ -1,37 +1,47 @@
 {
     "components": {
-        "MorphologyDB": {
-            "default": "calima-msa-r13",
-            "datasets": {
-                "calima-msa-r13": {
-                    "path": "morphology_db/calima-msa-r13"
-                },
-                "calima-egy-r13": {
-                    "path": "morphology_db/calima-egy-r13"
-                }
-            }
-        },
-        "DisambigMLE": {
-            "default": "calima-msa-r13",
-            "datasets": {
-                "calima-msa-r13": {
-                    "path": "disambig_mle/calima-msa-r13"
-                },
-                "calima-egy-r13": {
-                    "path": "disambig_mle/calima-egy-r13"
-                }
-            }
-        },
         "DialectID": {
-            "default": "default",
             "datasets": {
                 "default": {
                     "path": "dialectid/default"
                 }
-            }
+            },
+            "default": "default"
+        },
+        "DisambigMLE": {
+            "datasets": {
+                "calima-egy-r13": {
+                    "path": "disambig_mle/calima-egy-r13"
+                },
+                "calima-msa-r13": {
+                    "path": "disambig_mle/calima-msa-r13"
+                }
+            },
+            "default": "calima-msa-r13"
+        },
+        "MorphologyDB": {
+            "datasets": {
+                "calima-egy-r13": {
+                    "path": "morphology_db/calima-egy-r13"
+                },
+                "calima-glf-01": {
+                    "path": "morphology_db/calima-glf-01"
+                },
+                "calima-msa-r13": {
+                    "path": "morphology_db/calima-msa-r13"
+                }
+            },
+            "default": "calima-msa-r13"
+        },
+        "NamedEntityRecognition": {
+            "datasets": {
+                "arabert": {
+                    "path": "ner/arabert"
+                }
+            },
+            "default": "arabert"
         },
         "SentimentAnalysis": {
-            "default": "arabert",
             "datasets": {
                 "arabert": {
                     "path": "sentiment_analysis/arabert"
@@ -39,15 +49,8 @@
                 "mbert": {
                     "path": "sentiment_analysis/mbert"
                 }
-            }
-        },
-        "NamedEntityRecognition": {
-            "default": "arabert",
-            "datasets": {
-                "arabert": {
-                    "path": "ner/arabert"
-                }
-            }
+            },
+            "default": "arabert"
         }
     },
     "packages": {
@@ -57,7 +60,7 @@
                 "disambig-mle-all",
                 "sentiment-analysis-all",
                 "ner-all",
-                "dialectid-all"
+                "dialect-id-all"
             ],
             "description": "All available CAMeL Tools packages",
             "name": "all",
@@ -73,7 +76,7 @@
                 "dialectid-default"
             ],
             "description": "Default datasets for all CAMeL Tools components",
-            "name": "all",
+            "name": "defaults",
             "package_type": "meta",
             "private": false
         },
@@ -396,7 +399,7 @@
             "name": "dialectid-default",
             "package_type": "http",
             "private": false,
-            "sha256": "36129372655bf054a52567953b26192c2496b0fa8b485467cd9d32ff67392cd2",
+            "sha256": "5508b715bb2ae7c53034c6c8da17eb29e3cc10d1f3f61c4691c353e9d95647f7",
             "size": 282320133,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/dialectid_default-1.0.0.zip",
             "version": "1.0.0"
@@ -433,7 +436,7 @@
             "name": "disambig-mle-calima-egy-r13",
             "package_type": "http",
             "private": false,
-            "sha256": "f0d306276f670a8aa77324879a6a94092be7b7b5a89793c853050d33b6416c96",
+            "sha256": "be845b7949cd87cae548af3b51b09713cbe32d946fa66033a0f7146941904d6b",
             "size": 27187404,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/disambig_mle_calima-egy-r13-0.1.0.zip",
             "version": "0.1.0"
@@ -460,24 +463,15 @@
             "name": "disambig-mle-calima-msa-r13",
             "package_type": "http",
             "private": false,
-            "sha256": "e5f12ebb79a58fa8cb3eda99b94101d5b327a4fd83bb21e7ed4d71fac1ba8a52",
+            "sha256": "3173935ba752f842da20b8e95fea068cfb60218591a907552779c7a65ff42b3a",
             "size": 88724611,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/disambig_mle_calima-msa-r13-0.2.5.zip",
             "version": "0.2.5"
         },
-        "light": {
-            "dependencies": [
-                "morphology-db-all",
-                "disambig-mle-all"
-            ],
-            "description": "Datasets for morphology and MLE disambiguation only.",
-            "name": "light",
-            "package_type": "meta",
-            "private": false
-        },
         "morphology-db-all": {
             "dependencies": [
                 "morphology-db-msa-r13",
+                "morphology-db-glf-01",
                 "morphology-db-egy-r13"
             ],
             "description": "All available morphology databases",
@@ -505,10 +499,35 @@
             "name": "morphology-db-egy-r13",
             "package_type": "http",
             "private": false,
-            "sha256": "931dc805c2eb732e9551dc8f3923d0577d294e826917da71626c20409ebc2fe3",
+            "sha256": "eb8a2d3a115cad819a808931e7fb941d54344096e563643ba742708892e862ac",
             "size": 67255707,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/morphology_db_calima-egy-r13-0.2.0.zip",
             "version": "0.2.0"
+        },
+        "morphology-db-glf-01": {
+            "dependencies": [],
+            "description": "Database for analyzing Gulf Arabic",
+            "destination": "morphology_db/calima-glf-01",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "25fb60e0e59565106c6aa8eb6bd0492fb8cbe8211e5636bda2916de6ecdad886",
+                    "size": 251
+                },
+                {
+                    "path": "morphology.db",
+                    "sha256": "0b88b55d09eda8edc2f0009cb3f46d4b2ad8176cf5dc7a17a7b65439f7aaae7d",
+                    "size": 7976670
+                }
+            ],
+            "license": "CC BY 4.0",
+            "name": "morphology-db-glf-01",
+            "package_type": "http",
+            "private": false,
+            "sha256": "385a29aa4737335d6431768546aaaf7ecf848dfd4bef460c7e3358168c73c9b3",
+            "size": 7976921,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.30/morphology_db_calima-glf-01-0.1.0.zip",
+            "version": "0.1.0"
         },
         "morphology-db-msa-r13": {
             "dependencies": [],
@@ -530,7 +549,7 @@
             "name": "morphology-db-msa-r13",
             "package_type": "http",
             "private": false,
-            "sha256": "67419a907808217a786bc116b0a034b8b5e73c2fb7c82cf53bdc3a91e480920e",
+            "sha256": "fe6531250c5529307627cc63ed56447cbb9968020d6ea3ab867e6ad9af94c738",
             "size": 40488318,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/morphology_db_calima-msa-r13-0.4.0.zip",
             "version": "0.4.0"
@@ -589,7 +608,7 @@
             "name": "ner-arabert",
             "package_type": "http",
             "private": false,
-            "sha256": "851d23dc18a93af459bf891e40c7d6db5cb89ad37755fa764af5df5da3cfd8ee",
+            "sha256": "1e480e6060b7e42c829bdadbe482c2291861661fd71f0de67e533715ab24d2c5",
             "size": 541637416,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/ner_arabert-1.0.0.zip",
             "version": "1.0.0"
@@ -649,7 +668,7 @@
             "name": "sentiment-analysis-arabert",
             "package_type": "http",
             "private": false,
-            "sha256": "c424dfbed26e7567a477f5f4445542f192032b35003d0b696da0313233023c96",
+            "sha256": "ea76482ddddcc56b2ad4ae47570362dceb63fea65c06494c30df57c8ebdaf556",
             "size": 541619297,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/sentiment_analysis_arabert-1.0.0.zip",
             "version": "1.0.0"
@@ -699,11 +718,11 @@
             "name": "sentiment-analysis-mbert",
             "package_type": "http",
             "private": false,
-            "sha256": "1836f68f8be055062c3348cb48b3283fa1cfaba707a47cfc431aa1074286fa1a",
+            "sha256": "24155653c60bd6de9bca9a5e99b5f8b54ce4c3b1aadc4de8cb8f8343d417c84b",
             "size": 712482872,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/sentiment_analysis_mbert-1.0.0.zip",
             "version": "1.0.0"
         }
     },
-    "version": "1.3.0"
+    "version": "1.3.2"
 }
