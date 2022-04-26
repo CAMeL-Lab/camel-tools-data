@@ -33,6 +33,20 @@
             },
             "default": "calima-msa-r13"
         },
+        "DisambigRankingCache": {
+            "datasets": {
+                "calima-egy-r13": {
+                    "path": "disambig_ranking_cache/calima-egy-r13"
+                },
+                "calima-glf-01": {
+                    "path": "disambig_ranking_cache/calima-glf-01"
+                },
+                "calima-msa-r13": {
+                    "path": "disambig_ranking_cache/calima-msa-r13"
+                }
+            },
+            "default": "calima-msa-r13"
+        },
         "MorphologyDB": {
             "datasets": {
                 "calima-egy-r13": {
@@ -432,7 +446,8 @@
         },
         "disambig-bert-unfactored-egy": {
             "dependencies": [
-                "morphology-db-egy-r13"
+                "morphology-db-egy-r13",
+                "disambig-ranking-cache-calima-egy-r13"
             ],
             "description": "Unfactored BERT model for disambiguating Egyptian Arabic",
             "destination": "disambig_bert_unfactored/egy",
@@ -449,8 +464,8 @@
                 },
                 {
                     "path": "default_config.json",
-                    "sha256": "dac677dc3dd55b4a118f95f4d906c8a7df63e2a403507bba5f9303949efce748",
-                    "size": 269
+                    "sha256": "cea1e02dd1ac4778e97646bf4ea9d3091d2f8fd8cdcaf11e9b5d72b5aba45ed0",
+                    "size": 281
                 },
                 {
                     "path": "mle_model.json",
@@ -487,14 +502,15 @@
             "name": "disambig-bert-unfactored-egy",
             "package_type": "http",
             "private": false,
-            "sha256": "0b1ec5fed1c6a3d4a2c5c6be63de047c239e8074ca1a9434fe2f1af6fef300c8",
-            "size": 445539231,
-            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.08/disambig_bert_unfactored-egy-1.0.0.zip",
-            "version": "1.0.0"
+            "sha256": "d490d12c140b9cf38999f771a9ee2e80f496650107e65e4ae39d497e6f49e09e",
+            "size": 445539243,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_bert_unfactored-egy-1.0.1.zip",
+            "version": "1.0.1"
         },
         "disambig-bert-unfactored-glf": {
             "dependencies": [
-                "morphology-db-glf-01"
+                "morphology-db-glf-01",
+                "disambig-ranking-cache-calima-glf-01"
             ],
             "description": "Unfactored BERT model for disambiguating Gulf Arabic",
             "destination": "disambig_bert_unfactored/glf",
@@ -511,8 +527,8 @@
                 },
                 {
                     "path": "default_config.json",
-                    "sha256": "acb32799a530905659b123099dce23285c9a6269af582c8ed4cc7f808eb5e4aa",
-                    "size": 263
+                    "sha256": "df3f4ff2bd4d81bee0748c2b3f82acc0d52e565ef25e8c427df0f48d41b141c0",
+                    "size": 274
                 },
                 {
                     "path": "mle_model.json",
@@ -549,14 +565,15 @@
             "name": "disambig-bert-unfactored-glf",
             "package_type": "http",
             "private": false,
-            "sha256": "8119d16fff2d91dffd16fb67ae44e9c5098658d7342c49fd938508a01c6237fe",
-            "size": 442325123,
-            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.08/disambig_bert_unfactored-glf-1.0.0.zip",
-            "version": "1.0.0"
+            "sha256": "11721838ba14366085de04b8208e6388e8d3ff120e63d95d443f86fcec791543",
+            "size": 442325134,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_bert_unfactored-glf-1.0.1.zip",
+            "version": "1.0.1"
         },
         "disambig-bert-unfactored-msa": {
             "dependencies": [
-                "morphology-db-msa-r13"
+                "morphology-db-msa-r13",
+                "disambig-ranking-cache-calima-msa-r13"
             ],
             "description": "Unfactored BERT model for disambiguating Modern Standard Arabic",
             "destination": "disambig_bert_unfactored/msa",
@@ -573,8 +590,8 @@
                 },
                 {
                     "path": "default_config.json",
-                    "sha256": "48d32efda8089dd3ec8932ea23f37dad70ca793d3268d6b71d9172f091b22cdf",
-                    "size": 269
+                    "sha256": "dd013630544f8c03de85df8e3afa9270b846bbd714369be4c641ee0fb0c7fe7b",
+                    "size": 281
                 },
                 {
                     "path": "mle_model.json",
@@ -611,10 +628,10 @@
             "name": "disambig-bert-unfactored-msa",
             "package_type": "http",
             "private": false,
-            "sha256": "b861f0c273fe535b0fc465e4505fbf1b5f287e3cab0b593651616cc71d140c34",
-            "size": 445036331,
-            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.08/disambig_bert_unfactored-msa-1.0.0.zip",
-            "version": "1.0.0"
+            "sha256": "95fee89f048311dafaf5cf2897f1416b3a1ef54866f75a13aab98a6973031107",
+            "size": 445036343,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_bert_unfactored-msa-1.0.1.zip",
+            "version": "1.0.1"
         },
         "disambig-mle-all": {
             "dependencies": [
@@ -680,6 +697,81 @@
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/disambig_mle_calima-msa-r13-0.2.5.zip",
             "version": "0.2.5"
         },
+        "disambig-ranking-cache-calima-egy-r13": {
+            "dependencies": [],
+            "description": "Disambiguation ranking cache synced with the calima-egy-r13 morphology database.",
+            "destination": "disambig_ranking_cache/calima-egy-r13",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "4e027b03a7b9766d23eb7fa64a2acd265b45364025ac9decd4782eb3b1171d4a",
+                    "size": 16599
+                },
+                {
+                    "path": "default_cache.pickle",
+                    "sha256": "5752679f1fd0abd9f9c77d76b5e49ca685d9060a54a0dfa59bfbe6639ad55b41",
+                    "size": 289196433
+                }
+            ],
+            "license": "GPL v2",
+            "name": "disambig-ranking-cache-calima-egy-r13",
+            "package_type": "http",
+            "private": true,
+            "sha256": "dcd0d1526f206185e464e721382607978cfa5469bb8637fd73137525f6166b35",
+            "size": 289213032,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_ranking_cache_calima-egy-r13-1.0.0.zip",
+            "version": "1.0.0"
+        },
+        "disambig-ranking-cache-calima-glf-01": {
+            "dependencies": [],
+            "description": "Disambiguation ranking cache synced with the calima-glf-01 morphology database.",
+            "destination": "disambig_ranking_cache/calima-glf-0",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "25fb60e0e59565106c6aa8eb6bd0492fb8cbe8211e5636bda2916de6ecdad886",
+                    "size": 251
+                },
+                {
+                    "path": "default_cache.pickle",
+                    "sha256": "dd5dcce633d7012519ed430ccca9974215ea19b31cdf477ca3104be680523f72",
+                    "size": 21473761
+                }
+            ],
+            "license": "CC BY 4.0",
+            "name": "disambig-ranking-cache-calima-glf-01",
+            "package_type": "http",
+            "private": true,
+            "sha256": "99a1e2a9ac9107f40c089a0e2c964558d160a46c7d5071230e9f1fc2c057b8c4",
+            "size": 21474012,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_ranking_cache_calima-glf-01-1.0.0.zip",
+            "version": "1.0.0"
+        },
+        "disambig-ranking-cache-calima-msa-r13": {
+            "dependencies": [],
+            "description": "Disambiguation ranking cache synced with the calima-msa-r13 morphology database.",
+            "destination": "disambig_ranking_cache/calima-msa-r13",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "4e027b03a7b9766d23eb7fa64a2acd265b45364025ac9decd4782eb3b1171d4a",
+                    "size": 16599
+                },
+                {
+                    "path": "default_cache.pickle",
+                    "sha256": "1ba69e5c4e0b82eb15683e755564a0f4594e5790ac5e40b6098da625115cfa24",
+                    "size": 518842635
+                }
+            ],
+            "license": "GPL v2",
+            "name": "disambig-ranking-cache-calima-msa-r13",
+            "package_type": "http",
+            "private": true,
+            "sha256": "96ad4235dbfc4dbba7f336a09cd44aba7a33b3362acc86b2f84e068eaaf4d362",
+            "size": 518859234,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_ranking_cache_calima-msa-r13-1.0.0.zip",
+            "version": "1.0.0"
+        },
         "morphology-db-all": {
             "dependencies": [
                 "morphology-db-msa-r13",
@@ -694,7 +786,7 @@
         "morphology-db-egy-r13": {
             "dependencies": [],
             "description": "Database for analyzing Egyptian Arabic",
-            "destination": "morphology_db/calima-egy-r13",
+            "destination": "morphology_db/calima-msa-r13",
             "files": [
                 {
                     "path": "LICENSE",
@@ -938,5 +1030,5 @@
             "version": "1.0.0"
         }
     },
-    "version": "1.4.0"
+    "version": "1.4.1"
 }
