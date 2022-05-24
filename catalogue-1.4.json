@@ -725,7 +725,7 @@
         "disambig-ranking-cache-calima-glf-01": {
             "dependencies": [],
             "description": "Disambiguation ranking cache synced with the calima-glf-01 morphology database.",
-            "destination": "disambig_ranking_cache/calima-glf-0",
+            "destination": "disambig_ranking_cache/calima-glf-01",
             "files": [
                 {
                     "path": "LICENSE",
@@ -786,7 +786,7 @@
         "morphology-db-egy-r13": {
             "dependencies": [],
             "description": "Database for analyzing Egyptian Arabic",
-            "destination": "morphology_db/calima-msa-r13",
+            "destination": "morphology_db/calima-egy-r13",
             "files": [
                 {
                     "path": "LICENSE",
@@ -1030,5 +1030,5 @@
             "version": "1.0.0"
         }
     },
-    "version": "1.4.1"
+    "version": "1.4.2"
 }
