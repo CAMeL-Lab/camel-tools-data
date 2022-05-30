@@ -16,6 +16,9 @@
                 "glf": {
                     "path": "disambig_bert_unfactored/glf"
                 },
+                "lev": {
+                    "path": "disambig_bert_unfactored/lev"
+                },
                 "msa": {
                     "path": "disambig_bert_unfactored/msa"
                 }
@@ -41,6 +44,9 @@
                 "calima-glf-01": {
                     "path": "disambig_ranking_cache/calima-glf-01"
                 },
+                "calima-lev-01": {
+                    "path": "disambig_ranking_cache/calima-lev-01"
+                },
                 "calima-msa-r13": {
                     "path": "disambig_ranking_cache/calima-msa-r13"
                 }
@@ -54,6 +60,9 @@
                 },
                 "calima-glf-01": {
                     "path": "morphology_db/calima-glf-01"
+                },
+                "calima-lev-01": {
+                    "path": "morphology_db/calima-lev-01"
                 },
                 "calima-msa-r13": {
                     "path": "morphology_db/calima-msa-r13"
@@ -102,7 +111,8 @@
                 "disambig-mle-calima-msa-r13",
                 "sentiment-analysis-arabert",
                 "ner-arabert",
-                "dialectid-default"
+                "dialectid-default",
+                "disambig-bert-unfactored-msa"
             ],
             "description": "Default datasets for all CAMeL Tools components",
             "name": "defaults",
@@ -437,7 +447,8 @@
             "dependencies": [
                 "disambig-bert-unfactored-msa",
                 "disambig-bert-unfactored-egy",
-                "disambig-bert-unfactored-glf"
+                "disambig-bert-unfactored-glf",
+                "disambig-bert-unfactored-lev"
             ],
             "description": "All available unfactored BERT disambiguation models",
             "name": "disambig-bert-unfactored-all",
@@ -569,6 +580,69 @@
             "size": 442325134,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_bert_unfactored-glf-1.0.1.zip",
             "version": "1.0.1"
+        },
+        "disambig-bert-unfactored-lev": {
+            "dependencies": [
+                "morphology-db-lev-01",
+                "disambig-ranking-cache-calima-lev-01"
+            ],
+            "description": "Unfactored BERT model for disambiguating Levantine Arabic",
+            "destination": "disambig_bert_unfactored/lev",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "54f0cb9fb9c33cc3d46b51b01477cd7350e869b0630d72a087125ad6206b482a",
+                    "size": 1087
+                },
+                {
+                    "path": "config.json",
+                    "sha256": "5ecd10ab10d3ad6f363468e1efde47c53833954b9622e42f9b4d3a37db178c9c",
+                    "size": 376547
+                },
+                {
+                    "path": "default_config.json",
+                    "sha256": "ccfa0b9a9f7f1ed0187dbb6a8171338076383b67208e0eff50aa468d19a90e10",
+                    "size": 274
+                },
+                {
+                    "path": "mle_model.json",
+                    "sha256": "2299a76a3d428d1278a2320b1b9f7636188bbba1d21b2e29fd734fab2836fa5d",
+                    "size": 463099
+                },
+                {
+                    "path": "pytorch_model.bin",
+                    "sha256": "cf9314d41c553220fdcd4568686f3bc1d90a34f183ecb26fdbfd51150a3fe5d5",
+                    "size": 440049614
+                },
+                {
+                    "path": "special_tokens_map.json",
+                    "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+                    "size": 112
+                },
+                {
+                    "path": "tokenizer_config.json",
+                    "sha256": "73f5e97ab29042bac49dc96f7b8a7a790994509bbd2fe3e9cd4f59affc46c2ce",
+                    "size": 86
+                },
+                {
+                    "path": "training_args.bin",
+                    "sha256": "3e9189cce1ba41254f1600af88b07728c59fda061332a72ae21d0e1c31c215f3",
+                    "size": 1346
+                },
+                {
+                    "path": "vocab.txt",
+                    "sha256": "1df5f8da6ad6c56153c7a974c0b149bb7a0a6e332bcfa795c99deee6c1136ce2",
+                    "size": 304561
+                }
+            ],
+            "license": "MIT",
+            "name": "disambig-bert-unfactored-lev",
+            "package_type": "http",
+            "private": false,
+            "sha256": "6383e81837d362b66c15ff1cf29dcc0d3d41c42d71e7e8591389ee1a95a41ffa",
+            "size": 441196726,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.05.30/disambig_bert_unfactored-lev-1.0.0.zip",
+            "version": "1.0.0"
         },
         "disambig-bert-unfactored-msa": {
             "dependencies": [
@@ -747,6 +821,31 @@
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_ranking_cache_calima-glf-01-1.0.0.zip",
             "version": "1.0.0"
         },
+        "disambig-ranking-cache-calima-lev-01": {
+            "dependencies": [],
+            "description": "Disambiguation ranking cache synced with the calima-lev-01 morphology database.",
+            "destination": "disambig_ranking_cache/calima-lev-01",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "25fb60e0e59565106c6aa8eb6bd0492fb8cbe8211e5636bda2916de6ecdad886",
+                    "size": 251
+                },
+                {
+                    "path": "default_cache.pickle",
+                    "sha256": "0e9249be7b367779ab5b59ee97d4997a0c25735cca35697de4789901fc91eb74",
+                    "size": 18255108
+                }
+            ],
+            "license": "CC BY 4.0",
+            "name": "disambig-ranking-cache-calima-lev-01",
+            "package_type": "http",
+            "private": true,
+            "sha256": "087c356a4be89ada37693152ab41e16403a960c36f4a3b960ac84a9d23e6d8be",
+            "size": 18255359,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.05.30/disambig_ranking_cache_calima-lev-01-1.0.0.zip",
+            "version": "1.0.0"
+        },
         "disambig-ranking-cache-calima-msa-r13": {
             "dependencies": [],
             "description": "Disambiguation ranking cache synced with the calima-msa-r13 morphology database.",
@@ -776,6 +875,7 @@
             "dependencies": [
                 "morphology-db-msa-r13",
                 "morphology-db-glf-01",
+                "morphology-db-lev-01",
                 "morphology-db-egy-r13"
             ],
             "description": "All available morphology databases",
@@ -833,6 +933,33 @@
             "sha256": "385a29aa4737335d6431768546aaaf7ecf848dfd4bef460c7e3358168c73c9b3",
             "size": 7976921,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.30/morphology_db_calima-glf-01-0.1.0.zip",
+            "version": "0.1.0"
+        },
+        "morphology-db-lev-01": {
+            "dependencies": [
+                "morphology-db-lev-01"
+            ],
+            "description": "Database for analyzing Levantine Arabic",
+            "destination": "morphology_db/calima-lev-01",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "25fb60e0e59565106c6aa8eb6bd0492fb8cbe8211e5636bda2916de6ecdad886",
+                    "size": 251
+                },
+                {
+                    "path": "morphology.db",
+                    "sha256": "938b2f15af034cd1130afd30a142610e8602415a533aab3af403fa118210fc1f",
+                    "size": 10621699
+                }
+            ],
+            "license": "CC BY 4.0",
+            "name": "morphology-db-lev-01",
+            "package_type": "http",
+            "private": false,
+            "sha256": "34f012383f18196554ec38ec1d4e6c8d1cc767b25e00c397cd36c67afaf4c3c4",
+            "size": 10621950,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.05.30/morphology_db_calima-lev-01-0.1.0.zip",
             "version": "0.1.0"
         },
         "morphology-db-msa-r13": {
@@ -1030,5 +1157,5 @@
             "version": "1.0.0"
         }
     },
-    "version": "1.4.2"
+    "version": "1.4.3"
 }
