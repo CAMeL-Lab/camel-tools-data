@@ -783,18 +783,18 @@
                 },
                 {
                     "path": "default_cache.pickle",
-                    "sha256": "5752679f1fd0abd9f9c77d76b5e49ca685d9060a54a0dfa59bfbe6639ad55b41",
-                    "size": 289196433
+                    "sha256": "508efd9fe9e0afe96e7a70f9e8af14b0ed8c37155282c0a18bf481440a8df43d",
+                    "size": 314592590
                 }
             ],
             "license": "GPL v2",
             "name": "disambig-ranking-cache-calima-egy-r13",
             "package_type": "http",
             "private": true,
-            "sha256": "dcd0d1526f206185e464e721382607978cfa5469bb8637fd73137525f6166b35",
-            "size": 289213032,
-            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_ranking_cache_calima-egy-r13-1.0.0.zip",
-            "version": "1.0.0"
+            "sha256": "b75a465bd5d08e18a6d1b0515dacfb071cdfd27a77568e19b812cb7293966f67",
+            "size": 314609189,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.07.25/disambig_ranking_cache_calima-egy-r13-1.0.1.zip",
+            "version": "1.0.1"
         },
         "disambig-ranking-cache-calima-glf-01": {
             "dependencies": [],
@@ -808,18 +808,18 @@
                 },
                 {
                     "path": "default_cache.pickle",
-                    "sha256": "dd5dcce633d7012519ed430ccca9974215ea19b31cdf477ca3104be680523f72",
-                    "size": 21473761
+                    "sha256": "9e919fb19012cbf76a5953f64ecfb1c7b5f94babaccd3d0a45ce86604a019c01",
+                    "size": 27154264
                 }
             ],
             "license": "CC BY 4.0",
             "name": "disambig-ranking-cache-calima-glf-01",
             "package_type": "http",
             "private": true,
-            "sha256": "99a1e2a9ac9107f40c089a0e2c964558d160a46c7d5071230e9f1fc2c057b8c4",
-            "size": 21474012,
-            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_ranking_cache_calima-glf-01-1.0.0.zip",
-            "version": "1.0.0"
+            "sha256": "b76bad0469dbea8b84c2b77f9e1e31316781f40a612401890e7d9f76e92bacfd",
+            "size": 27154515,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.07.25/disambig_ranking_cache_calima-glf-01-1.0.1.zip",
+            "version": "1.0.1"
         },
         "disambig-ranking-cache-calima-lev-01": {
             "dependencies": [],
@@ -833,18 +833,18 @@
                 },
                 {
                     "path": "default_cache.pickle",
-                    "sha256": "0e9249be7b367779ab5b59ee97d4997a0c25735cca35697de4789901fc91eb74",
-                    "size": 18255108
+                    "sha256": "1debca5b66b26069ad1d16ac84ecd244a3981a68c9f6846da15353611f38bffc",
+                    "size": 22328738
                 }
             ],
             "license": "CC BY 4.0",
             "name": "disambig-ranking-cache-calima-lev-01",
             "package_type": "http",
             "private": true,
-            "sha256": "087c356a4be89ada37693152ab41e16403a960c36f4a3b960ac84a9d23e6d8be",
-            "size": 18255359,
-            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.05.30/disambig_ranking_cache_calima-lev-01-1.0.0.zip",
-            "version": "1.0.0"
+            "sha256": "dff600b80f15836c3e691c7c8c16522305f08bd0af60b919fa097eacf527d3f7",
+            "size": 22328989,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.07.25/disambig_ranking_cache_calima-lev-01-1.0.1.zip",
+            "version": "1.0.1"
         },
         "disambig-ranking-cache-calima-msa-r13": {
             "dependencies": [],
@@ -858,18 +858,18 @@
                 },
                 {
                     "path": "default_cache.pickle",
-                    "sha256": "1ba69e5c4e0b82eb15683e755564a0f4594e5790ac5e40b6098da625115cfa24",
-                    "size": 518842635
+                    "sha256": "560914f9b939aad3d95096f4b28ea04088a6fab445c5bcdf6d29fbb5094f2299",
+                    "size": 526526109
                 }
             ],
             "license": "GPL v2",
             "name": "disambig-ranking-cache-calima-msa-r13",
             "package_type": "http",
             "private": true,
-            "sha256": "96ad4235dbfc4dbba7f336a09cd44aba7a33b3362acc86b2f84e068eaaf4d362",
-            "size": 518859234,
-            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_ranking_cache_calima-msa-r13-1.0.0.zip",
-            "version": "1.0.0"
+            "sha256": "cfbe647a2fc840e8433b243fdd6203a3da56a65fd7333ebd471cc3d1345b7ee0",
+            "size": 526542708,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.07.25/disambig_ranking_cache_calima-msa-r13-1.0.1.zip",
+            "version": "1.0.1"
         },
         "morphology-db-all": {
             "dependencies": [
@@ -1157,5 +1157,5 @@
             "version": "1.0.0"
         }
     },
-    "version": "1.4.3"
+    "version": "1.4.4"
 }
