@@ -1,0 +1,1234 @@
+{
+    "components": {
+        "DialectID": {
+            "datasets": {
+                "model26": {
+                    "path": "dialectid/model26"
+                },
+                "model6": {
+                    "path": "dialectid/model6"
+                }
+            },
+            "default": "model26"
+        },
+        "DisambigBertUnfactored": {
+            "datasets": {
+                "egy": {
+                    "path": "disambig_bert_unfactored/egy"
+                },
+                "glf": {
+                    "path": "disambig_bert_unfactored/glf"
+                },
+                "lev": {
+                    "path": "disambig_bert_unfactored/lev"
+                },
+                "msa": {
+                    "path": "disambig_bert_unfactored/msa"
+                }
+            },
+            "default": "msa"
+        },
+        "DisambigMLE": {
+            "datasets": {
+                "calima-egy-r13": {
+                    "path": "disambig_mle/calima-egy-r13"
+                },
+                "calima-msa-r13": {
+                    "path": "disambig_mle/calima-msa-r13"
+                }
+            },
+            "default": "calima-msa-r13"
+        },
+        "DisambigRankingCache": {
+            "datasets": {
+                "calima-egy-r13": {
+                    "path": "disambig_ranking_cache/calima-egy-r13"
+                },
+                "calima-glf-01": {
+                    "path": "disambig_ranking_cache/calima-glf-01"
+                },
+                "calima-lev-01": {
+                    "path": "disambig_ranking_cache/calima-lev-01"
+                },
+                "calima-msa-r13": {
+                    "path": "disambig_ranking_cache/calima-msa-r13"
+                }
+            },
+            "default": "calima-msa-r13"
+        },
+        "MorphologyDB": {
+            "datasets": {
+                "calima-egy-r13": {
+                    "path": "morphology_db/calima-egy-r13"
+                },
+                "calima-glf-01": {
+                    "path": "morphology_db/calima-glf-01"
+                },
+                "calima-lev-01": {
+                    "path": "morphology_db/calima-lev-01"
+                },
+                "calima-msa-r13": {
+                    "path": "morphology_db/calima-msa-r13"
+                },
+                "calima-msa-s31": {
+                    "path": "morphology_db/calima-msa-s31"
+                }
+            },
+            "default": "calima-msa-r13"
+        },
+        "NamedEntityRecognition": {
+            "datasets": {
+                "arabert": {
+                    "path": "ner/arabert"
+                }
+            },
+            "default": "arabert"
+        },
+        "SentimentAnalysis": {
+            "datasets": {
+                "arabert": {
+                    "path": "sentiment_analysis/arabert"
+                },
+                "mbert": {
+                    "path": "sentiment_analysis/mbert"
+                }
+            },
+            "default": "arabert"
+        }
+    },
+    "packages": {
+        "all": {
+            "dependencies": [
+                "morphology-db-all",
+                "disambig-mle-all",
+                "sentiment-analysis-all",
+                "ner-all",
+                "dialectid-all",
+                "disambig-bert-unfactored-all"
+            ],
+            "description": "All available CAMeL Tools packages",
+            "name": "all",
+            "package_type": "meta",
+            "private": false
+        },
+        "defaults": {
+            "dependencies": [
+                "morphology-db-msa-r13",
+                "disambig-mle-calima-msa-r13",
+                "sentiment-analysis-arabert",
+                "ner-arabert",
+                "dialectid-model26",
+                "disambig-bert-unfactored-msa"
+            ],
+            "description": "Default datasets for all CAMeL Tools components",
+            "name": "defaults",
+            "package_type": "meta",
+            "private": false
+        },
+        "dialectid-all": {
+            "dependencies": [
+                "dialectid-model26",
+                "dialectid-model6"
+            ],
+            "description": "All available dialect identification models",
+            "name": "dialectid-all",
+            "package_type": "meta",
+            "private": false
+        },
+        "dialectid-model26": {
+            "dependencies": [],
+            "description": "Dialect identification model trained to differentiating between 25 Arabic city dialects as well as Modern Standard Arabic",
+            "destination": "dialectid/model26",
+            "files": [
+                {
+                    "path": "did_pretrained_37.dill",
+                    "sha256": "c7f8281d885388122ac94d5807b166bfc98c3f5dc2e1e836dc7ce14f2b7758e5",
+                    "size": 48661660
+                },
+                {
+                    "path": "did_pretrained_38.dill",
+                    "sha256": "51859d411f3fecf7005d5a9a75d300a5de1c8938dc9157e5311a05876607bdac",
+                    "size": 47980708
+                },
+                {
+                    "path": "did_pretrained_39.dill",
+                    "sha256": "018e7186ebba5fcc26b3db9533f47cfa630b03974734c63cc39dbb5dd454040b",
+                    "size": 47980708
+                },
+                {
+                    "path": "lm/char/ALE.arpa",
+                    "sha256": "f84c1f3dfb64ac526871fa56bc162366fd44d35b71fffc35f36805313a19a5dc",
+                    "size": 1417569
+                },
+                {
+                    "path": "lm/char/ALG.arpa",
+                    "sha256": "36293b7253d279c96cbfc99d88205e5848650bbc73c49235049303e26b4e7d55",
+                    "size": 1430818
+                },
+                {
+                    "path": "lm/char/ALX.arpa",
+                    "sha256": "b31a0a856d46b2c3bd0ae5f97d2ee336afe616a4707881afd5fda38bfc59c5fd",
+                    "size": 1446409
+                },
+                {
+                    "path": "lm/char/AMM.arpa",
+                    "sha256": "9582179e071dcd51d4a76bc69ec84637e4a008d21acc45420b785def17cf4d76",
+                    "size": 1459485
+                },
+                {
+                    "path": "lm/char/ASW.arpa",
+                    "sha256": "1d266f6d22765217b728b6c801a711d1e10441ff5cec7cc1e8c0aeb24010361f",
+                    "size": 1492904
+                },
+                {
+                    "path": "lm/char/BAG.arpa",
+                    "sha256": "f2cffbe86bc8c2a38237d815e630eda184f2ddd1b1591cbe636838f9a9ed82b1",
+                    "size": 1476274
+                },
+                {
+                    "path": "lm/char/BAS.arpa",
+                    "sha256": "e75e06a098712436a99b9fe2058cd2b63bc16f3eb72789baccf0ab16fed97001",
+                    "size": 1420440
+                },
+                {
+                    "path": "lm/char/BEI.arpa",
+                    "sha256": "50fa85e8ccd744c8c957f6f3e4a7161b7f596d7043823fb5285797934b85f545",
+                    "size": 1494841
+                },
+                {
+                    "path": "lm/char/BEN.arpa",
+                    "sha256": "874db610fd6e6f245139ce665437e2a4f7438c901a59cf2c09f9a265f09e9b89",
+                    "size": 1428371
+                },
+                {
+                    "path": "lm/char/CAI.arpa",
+                    "sha256": "cf7707f19a62653c71a947bb5b2332b1633aa4941bb00f3661aa3fdccb69c27c",
+                    "size": 1559760
+                },
+                {
+                    "path": "lm/char/DAM.arpa",
+                    "sha256": "742dff6c4012630a0d2c280b84773a03788a3de03f4ce61f3c535ad60c61bbac",
+                    "size": 1436808
+                },
+                {
+                    "path": "lm/char/DOH.arpa",
+                    "sha256": "2c9904b173450a755ae9f163c8f7ba810d3289e2c956df620ac105f982e8fb43",
+                    "size": 1354206
+                },
+                {
+                    "path": "lm/char/FES.arpa",
+                    "sha256": "19eaeb255d50fe84cf05c4f6ea612ca33dbb39305df102866c1a8e427cea8dd1",
+                    "size": 1486282
+                },
+                {
+                    "path": "lm/char/JED.arpa",
+                    "sha256": "68f5fe52d9036d02da7f55721e9d97fdfe1dbf620e2719d2c900f5c083a1d197",
+                    "size": 1394236
+                },
+                {
+                    "path": "lm/char/JER.arpa",
+                    "sha256": "c92137d13ecbebb391a1dba1c81fd26157e57cad8a2fb42336ad0bbc2c2b2083",
+                    "size": 1349436
+                },
+                {
+                    "path": "lm/char/KHA.arpa",
+                    "sha256": "2c72e27327f989ab1ec897e4c8433cba4ced9f46c5fafce974400bf297a72281",
+                    "size": 1454058
+                },
+                {
+                    "path": "lm/char/MOS.arpa",
+                    "sha256": "b5de0b1c5823d7284fe1e2aab19a9d0eef9f4e10c0df4c04c0ce4ce36dcbca30",
+                    "size": 1448969
+                },
+                {
+                    "path": "lm/char/MSA.arpa",
+                    "sha256": "2029f89cd28b076ef52db9ccee4184ab03c6dca90e3431c0d1075c5ee26055a1",
+                    "size": 1642570
+                },
+                {
+                    "path": "lm/char/MUS.arpa",
+                    "sha256": "e16d6976f31a85c48e50ee59439ac227568707c37d181ecd9e694bc171b46d0a",
+                    "size": 1544332
+                },
+                {
+                    "path": "lm/char/RAB.arpa",
+                    "sha256": "1b00ab0cf4561c3086116f844f1a46df3b8bdf3d6ff391181eb282cc5992a6dd",
+                    "size": 1504144
+                },
+                {
+                    "path": "lm/char/RIY.arpa",
+                    "sha256": "05ac3dc08f7ce91b9383056a6d3ca19b6b9b008de5a693402eaa33777890175f",
+                    "size": 1426357
+                },
+                {
+                    "path": "lm/char/SAL.arpa",
+                    "sha256": "82c441a468af80c5ed83ca14e9440938aa18794490ba9de2474f863afcda8b77",
+                    "size": 1396665
+                },
+                {
+                    "path": "lm/char/SAN.arpa",
+                    "sha256": "f97f7d5355431964ba7dba4c73600e604e90f98f9123bb67730aeacf2dce0aec",
+                    "size": 1484427
+                },
+                {
+                    "path": "lm/char/SFX.arpa",
+                    "sha256": "f4a037a7103c6a812f9b5e2a5e839827353c1ab34e7af94a8789dbe7d518deaa",
+                    "size": 1363657
+                },
+                {
+                    "path": "lm/char/TRI.arpa",
+                    "sha256": "2d41cb23372ab87242dfd93cf800853e52199019205d8fcff5b48aa6812e466d",
+                    "size": 1387514
+                },
+                {
+                    "path": "lm/char/TUN.arpa",
+                    "sha256": "f1667f81f6bef0c27eca3971da9fde98d42ed53eddcbcccff29d707e87528c71",
+                    "size": 1543053
+                },
+                {
+                    "path": "lm/word/ALE.arpa",
+                    "sha256": "4ca0bbf94f2341bfb246c67982ba5528ba79cf515aca354365178f7fd96fec58",
+                    "size": 1731228
+                },
+                {
+                    "path": "lm/word/ALG.arpa",
+                    "sha256": "e0771c6d765e5e97194554ff4d3da6a628cc5bac24868acc22399821311c8e59",
+                    "size": 1885557
+                },
+                {
+                    "path": "lm/word/ALX.arpa",
+                    "sha256": "90a39f065ee3a472c0493cf8651b2e1d82ad9c52bfd6686b3dff8c0aac55f1cd",
+                    "size": 1876255
+                },
+                {
+                    "path": "lm/word/AMM.arpa",
+                    "sha256": "38f8071b6d9464b79f06a482b0b6c097b9332b5a075389f048fde1dcb3a4d11e",
+                    "size": 1897022
+                },
+                {
+                    "path": "lm/word/ASW.arpa",
+                    "sha256": "37061c728bf264a3db5c09ad9ba336def5efbeea46767ff0a5e97c748b3aac5b",
+                    "size": 1944294
+                },
+                {
+                    "path": "lm/word/BAG.arpa",
+                    "sha256": "ed33066874011ce715d8c6dd9be1e6870b2e3a7d58ffe8e4995347d4ee80254e",
+                    "size": 1823528
+                },
+                {
+                    "path": "lm/word/BAS.arpa",
+                    "sha256": "df38826e658fdad570b132d00e78dc0f7c4c26da295b22f0c8ece5cd51ce1501",
+                    "size": 1760312
+                },
+                {
+                    "path": "lm/word/BEI.arpa",
+                    "sha256": "eb8a3ad792922bd732e0014cd3312c5528dad9b4d11b62f380589c99b9c3fdd0",
+                    "size": 1724524
+                },
+                {
+                    "path": "lm/word/BEN.arpa",
+                    "sha256": "d01562f04b21c2a6965f80f8fdb60f5da6bd31dc36c8e3b76578958c93e61892",
+                    "size": 1819396
+                },
+                {
+                    "path": "lm/word/CAI.arpa",
+                    "sha256": "618ab5296297edbba52387d612ca9f9ec4b7609d49974e6afbbdb1c9d907771a",
+                    "size": 1885954
+                },
+                {
+                    "path": "lm/word/DAM.arpa",
+                    "sha256": "ff385cf61fd5df080bebc02f9a635a028e04fabe171aa148a31f41dfb627e8f8",
+                    "size": 1748111
+                },
+                {
+                    "path": "lm/word/DOH.arpa",
+                    "sha256": "28fd64d8d51b0d2683818b4f521788d183e0b1a10399c327889fca4beeb7df61",
+                    "size": 1690442
+                },
+                {
+                    "path": "lm/word/FES.arpa",
+                    "sha256": "92509d8cc1323db2d27ba00d7be6c9c60b840c925f2ab442b348e0f0bc5e02f2",
+                    "size": 1992630
+                },
+                {
+                    "path": "lm/word/JED.arpa",
+                    "sha256": "b2831ad5f5c5cfdd4e8d89a62d78faa29bd7a72b1e81aa6a7953c941296b0cce",
+                    "size": 1723217
+                },
+                {
+                    "path": "lm/word/JER.arpa",
+                    "sha256": "ec00291eb3ee4ea4d37dde11c2761ff17eb5c0edb07ed4c0779deedbb95066f1",
+                    "size": 1745270
+                },
+                {
+                    "path": "lm/word/KHA.arpa",
+                    "sha256": "7a7c078503c520ba2629ea43b2dde7b8909c5f1fad84c0debc9702c849093d99",
+                    "size": 1854476
+                },
+                {
+                    "path": "lm/word/MOS.arpa",
+                    "sha256": "086c27c12f848db3cb3c8aaa36070eb283ba88cef1be5359db4f030b40113358",
+                    "size": 1877410
+                },
+                {
+                    "path": "lm/word/MSA.arpa",
+                    "sha256": "1608d9e34aa6da8e8587e9c2f18aa49610fbb3304632752f631ced3187edcf52",
+                    "size": 2119192
+                },
+                {
+                    "path": "lm/word/MUS.arpa",
+                    "sha256": "92e70b4ef25632ac02c0f5886ed02c3444e3e9f92f0cd37bf886012178627037",
+                    "size": 1908089
+                },
+                {
+                    "path": "lm/word/RAB.arpa",
+                    "sha256": "6d01d436274b1a42bff55cf996a0c7fd15ab7bd32d4cd887f91fd15c9163eddc",
+                    "size": 2016800
+                },
+                {
+                    "path": "lm/word/RIY.arpa",
+                    "sha256": "2a0ee87e386f0a5b623d0a9c3f33ddf722b4312252c8cd5bf6fa5731b56b2f24",
+                    "size": 1780009
+                },
+                {
+                    "path": "lm/word/SAL.arpa",
+                    "sha256": "eaf5924b9ae8c6fe1951c29bf9b99d5408b77c7e44fb89e321c7c68ba53686fc",
+                    "size": 1785652
+                },
+                {
+                    "path": "lm/word/SAN.arpa",
+                    "sha256": "b601f9fabc1e273512e036aa61a85f5ce894078229a94ab26998d2d55ebfcb1e",
+                    "size": 1834840
+                },
+                {
+                    "path": "lm/word/SFX.arpa",
+                    "sha256": "54e6ba6082a271460d5ccd397771fbc3381a1d87fc21788401007762b531388d",
+                    "size": 1779635
+                },
+                {
+                    "path": "lm/word/TRI.arpa",
+                    "sha256": "d8dac125274f62d23d4ddb06e9ed452f72997cf404692f1e909dd786e5f5146e",
+                    "size": 1844098
+                },
+                {
+                    "path": "lm/word/TUN.arpa",
+                    "sha256": "c49b6a7ad9726819126b56b89189192ce32c934dab884f1471d31c76df13c5fe",
+                    "size": 1787356
+                }
+            ],
+            "license": "MIT",
+            "name": "dialectid-model26",
+            "package_type": "http",
+            "private": false,
+            "sha256": "50c55caf910413fea6b2e75986373ad9627c8bbaf82133e07eef8c5f935ec63e",
+            "size": 230301958,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2023.02.03/dialectid_model26-1.0.0.zip",
+            "version": "1.0.0"
+        },
+        "dialectid-model6": {
+            "dependencies": [],
+            "description": "Dialect identification model trained to differentiating between 5 Arabic city dialects as well as Modern Standard Arabic",
+            "destination": "dialectid/model6",
+            "files": [
+                {
+                    "path": "did_pretrained_37.dill",
+                    "sha256": "4308d615ecf56dfdac0d60a2244530169a647a7d71f34db9064b29900ae8de57",
+                    "size": 12774165
+                },
+                {
+                    "path": "did_pretrained_38.dill",
+                    "sha256": "8f48a6025a5b837099859defa3be178b99bfdc213e8d3771ee123d4fe63f5544",
+                    "size": 12385448
+                },
+                {
+                    "path": "did_pretrained_39.dill",
+                    "sha256": "03fa690ab7e619049a38ac7eb580db6556662e74351bea075503013a30f20236",
+                    "size": 12385448
+                },
+                {
+                    "path": "lm/char/BEI.arpa",
+                    "sha256": "4492265572a54efacf364da8a57a50ef611368b6740341045b74fb01a72be24a",
+                    "size": 3769273
+                },
+                {
+                    "path": "lm/char/CAI.arpa",
+                    "sha256": "371d7c98a78f9024869c4d3319269c80fc4f867a41a5d6ece022f43252d4eba0",
+                    "size": 3860605
+                },
+                {
+                    "path": "lm/char/DOH.arpa",
+                    "sha256": "37508a7ba76aacc30031bfa8fb424aa7fb32a875ed85326dfbe9dfa3690a461a",
+                    "size": 3293445
+                },
+                {
+                    "path": "lm/char/MSA.arpa",
+                    "sha256": "7c8e35f25b90f4183bdc5adb47fa78cc73809a011274ec97c92561c205d9dc3a",
+                    "size": 4107207
+                },
+                {
+                    "path": "lm/char/RAB.arpa",
+                    "sha256": "e4a65df088dad41415a8fe4f7737b05c294d9a002c73386eb8d59c28d7f22190",
+                    "size": 3800519
+                },
+                {
+                    "path": "lm/char/TUN.arpa",
+                    "sha256": "dbb2eb5f9d6c1265b09c7049cc6f66d7653e80e304fbfaf00c81edc19a4f2c18",
+                    "size": 3879462
+                },
+                {
+                    "path": "lm/word/BEI.arpa",
+                    "sha256": "b3d567f5e5643bd648af8b057fe4f55f9920ed2f6423315c73a528fbde404393",
+                    "size": 8939307
+                },
+                {
+                    "path": "lm/word/CAI.arpa",
+                    "sha256": "b928139d5387f580b8db41dd538b328a4ef3ab11debc488b63260c9307f8503f",
+                    "size": 9746497
+                },
+                {
+                    "path": "lm/word/DOH.arpa",
+                    "sha256": "5038f13961427d6c97504419b43649be0c81702851385e4daaadfa2178cffb92",
+                    "size": 8355549
+                },
+                {
+                    "path": "lm/word/MSA.arpa",
+                    "sha256": "25a55bb22dca458d391754d3017b231909b8a53e56140f3ae69f1f4167226b44",
+                    "size": 10646301
+                },
+                {
+                    "path": "lm/word/RAB.arpa",
+                    "sha256": "58e964af4caff9487ff4e687f309f8d07a07666b077d9b323676b9b1bfb1ee50",
+                    "size": 10295672
+                },
+                {
+                    "path": "lm/word/TUN.arpa",
+                    "sha256": "4f1c241016c5a914fa8f7761888457688395b6765e3161d7fdb1924dadd0a3ea",
+                    "size": 9412724
+                }
+            ],
+            "license": "MIT",
+            "name": "dialectid-model6",
+            "package_type": "http",
+            "private": false,
+            "sha256": "f46fb2e0c2b95313b8a999042bafe0bea63a998da3488d2c63b29772b10ae2fa",
+            "size": 117651622,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2023.02.03/dialectid_model6-1.0.0.zip",
+            "version": "1.0.0"
+        },
+        "disambig-bert-unfactored-all": {
+            "dependencies": [
+                "disambig-bert-unfactored-msa",
+                "disambig-bert-unfactored-egy",
+                "disambig-bert-unfactored-glf",
+                "disambig-bert-unfactored-lev"
+            ],
+            "description": "All available unfactored BERT disambiguation models",
+            "name": "disambig-bert-unfactored-all",
+            "package_type": "meta",
+            "private": false
+        },
+        "disambig-bert-unfactored-egy": {
+            "dependencies": [
+                "morphology-db-egy-r13",
+                "disambig-ranking-cache-calima-egy-r13"
+            ],
+            "description": "Unfactored BERT model for disambiguating Egyptian Arabic",
+            "destination": "disambig_bert_unfactored/egy",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "8581afa0312be338c553bb2e084c62d526aca4d0451045a92b9fc85b42a51469",
+                    "size": 1086
+                },
+                {
+                    "path": "config.json",
+                    "sha256": "1043b394c48f3a0713e438c6320130407943f838e48d8f9eca964fbe7d8cedc5",
+                    "size": 743011
+                },
+                {
+                    "path": "default_config.json",
+                    "sha256": "cea1e02dd1ac4778e97646bf4ea9d3091d2f8fd8cdcaf11e9b5d72b5aba45ed0",
+                    "size": 281
+                },
+                {
+                    "path": "mle_model.json",
+                    "sha256": "b318d6108d8cbbee55f2b31f841faf024fc6ab772c6e6b341bed6b4e1577ceba",
+                    "size": 870986
+                },
+                {
+                    "path": "pytorch_model.bin",
+                    "sha256": "54a1ef140078cf2fe5ed74e351016126dd4f806b7d93851b6ea9192912cf3a51",
+                    "size": 443617774
+                },
+                {
+                    "path": "special_tokens_map.json",
+                    "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+                    "size": 112
+                },
+                {
+                    "path": "tokenizer_config.json",
+                    "sha256": "73f5e97ab29042bac49dc96f7b8a7a790994509bbd2fe3e9cd4f59affc46c2ce",
+                    "size": 86
+                },
+                {
+                    "path": "training_args.bin",
+                    "sha256": "17b1ecddc9dc17597d682a0d940138aa0bcdd74ed58ba95cb71ec294ae05c4e8",
+                    "size": 1346
+                },
+                {
+                    "path": "vocab.txt",
+                    "sha256": "1df5f8da6ad6c56153c7a974c0b149bb7a0a6e332bcfa795c99deee6c1136ce2",
+                    "size": 304561
+                }
+            ],
+            "license": "MIT",
+            "name": "disambig-bert-unfactored-egy",
+            "package_type": "http",
+            "private": false,
+            "sha256": "d490d12c140b9cf38999f771a9ee2e80f496650107e65e4ae39d497e6f49e09e",
+            "size": 445539243,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_bert_unfactored-egy-1.0.1.zip",
+            "version": "1.0.1"
+        },
+        "disambig-bert-unfactored-glf": {
+            "dependencies": [
+                "morphology-db-glf-01",
+                "disambig-ranking-cache-calima-glf-01"
+            ],
+            "description": "Unfactored BERT model for disambiguating Gulf Arabic",
+            "destination": "disambig_bert_unfactored/glf",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "8581afa0312be338c553bb2e084c62d526aca4d0451045a92b9fc85b42a51469",
+                    "size": 1086
+                },
+                {
+                    "path": "config.json",
+                    "sha256": "512fbddf8ad142e0543d33b8a4b74089ae92bb0e7ce64e530781eda64a56ae6f",
+                    "size": 478959
+                },
+                {
+                    "path": "default_config.json",
+                    "sha256": "df3f4ff2bd4d81bee0748c2b3f82acc0d52e565ef25e8c427df0f48d41b141c0",
+                    "size": 274
+                },
+                {
+                    "path": "mle_model.json",
+                    "sha256": "2a1bddef886afdf2b9878d9ef054b90563493617dad426abb6e44023f0191c9c",
+                    "size": 517080
+                },
+                {
+                    "path": "pytorch_model.bin",
+                    "sha256": "31d56e01ce7d2bbbb868ec022597507f802dc3e05326f52f49f2eec14cd6a2d5",
+                    "size": 441021630
+                },
+                {
+                    "path": "special_tokens_map.json",
+                    "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+                    "size": 112
+                },
+                {
+                    "path": "tokenizer_config.json",
+                    "sha256": "73f5e97ab29042bac49dc96f7b8a7a790994509bbd2fe3e9cd4f59affc46c2ce",
+                    "size": 86
+                },
+                {
+                    "path": "training_args.bin",
+                    "sha256": "805d507d8455cbca8b5226f070730a149ec50abfb9005fa2f4a75d2908346d91",
+                    "size": 1346
+                },
+                {
+                    "path": "vocab.txt",
+                    "sha256": "1df5f8da6ad6c56153c7a974c0b149bb7a0a6e332bcfa795c99deee6c1136ce2",
+                    "size": 304561
+                }
+            ],
+            "license": "MIT",
+            "name": "disambig-bert-unfactored-glf",
+            "package_type": "http",
+            "private": false,
+            "sha256": "11721838ba14366085de04b8208e6388e8d3ff120e63d95d443f86fcec791543",
+            "size": 442325134,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_bert_unfactored-glf-1.0.1.zip",
+            "version": "1.0.1"
+        },
+        "disambig-bert-unfactored-lev": {
+            "dependencies": [
+                "morphology-db-lev-01",
+                "disambig-ranking-cache-calima-lev-01"
+            ],
+            "description": "Unfactored BERT model for disambiguating Levantine Arabic",
+            "destination": "disambig_bert_unfactored/lev",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "54f0cb9fb9c33cc3d46b51b01477cd7350e869b0630d72a087125ad6206b482a",
+                    "size": 1087
+                },
+                {
+                    "path": "config.json",
+                    "sha256": "5ecd10ab10d3ad6f363468e1efde47c53833954b9622e42f9b4d3a37db178c9c",
+                    "size": 376547
+                },
+                {
+                    "path": "default_config.json",
+                    "sha256": "ccfa0b9a9f7f1ed0187dbb6a8171338076383b67208e0eff50aa468d19a90e10",
+                    "size": 274
+                },
+                {
+                    "path": "mle_model.json",
+                    "sha256": "2299a76a3d428d1278a2320b1b9f7636188bbba1d21b2e29fd734fab2836fa5d",
+                    "size": 463099
+                },
+                {
+                    "path": "pytorch_model.bin",
+                    "sha256": "cf9314d41c553220fdcd4568686f3bc1d90a34f183ecb26fdbfd51150a3fe5d5",
+                    "size": 440049614
+                },
+                {
+                    "path": "special_tokens_map.json",
+                    "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+                    "size": 112
+                },
+                {
+                    "path": "tokenizer_config.json",
+                    "sha256": "73f5e97ab29042bac49dc96f7b8a7a790994509bbd2fe3e9cd4f59affc46c2ce",
+                    "size": 86
+                },
+                {
+                    "path": "training_args.bin",
+                    "sha256": "3e9189cce1ba41254f1600af88b07728c59fda061332a72ae21d0e1c31c215f3",
+                    "size": 1346
+                },
+                {
+                    "path": "vocab.txt",
+                    "sha256": "1df5f8da6ad6c56153c7a974c0b149bb7a0a6e332bcfa795c99deee6c1136ce2",
+                    "size": 304561
+                }
+            ],
+            "license": "MIT",
+            "name": "disambig-bert-unfactored-lev",
+            "package_type": "http",
+            "private": false,
+            "sha256": "6383e81837d362b66c15ff1cf29dcc0d3d41c42d71e7e8591389ee1a95a41ffa",
+            "size": 441196726,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.05.30/disambig_bert_unfactored-lev-1.0.0.zip",
+            "version": "1.0.0"
+        },
+        "disambig-bert-unfactored-msa": {
+            "dependencies": [
+                "morphology-db-msa-r13",
+                "disambig-ranking-cache-calima-msa-r13"
+            ],
+            "description": "Unfactored BERT model for disambiguating Modern Standard Arabic",
+            "destination": "disambig_bert_unfactored/msa",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "8581afa0312be338c553bb2e084c62d526aca4d0451045a92b9fc85b42a51469",
+                    "size": 1086
+                },
+                {
+                    "path": "config.json",
+                    "sha256": "e47ce7bfcf3ab60a70b5490e347f5513752a0606df99d14774b8f3301ff491b9",
+                    "size": 609237
+                },
+                {
+                    "path": "default_config.json",
+                    "sha256": "dd013630544f8c03de85df8e3afa9270b846bbd714369be4c641ee0fb0c7fe7b",
+                    "size": 281
+                },
+                {
+                    "path": "mle_model.json",
+                    "sha256": "317fed1dd79261edbd8acff9d37e333dece47e37d4034fcf601d390f7aac176c",
+                    "size": 1120136
+                },
+                {
+                    "path": "pytorch_model.bin",
+                    "sha256": "a1a22431cdc0934151e4039abbd7890f06ba7c1f914ca71a90eba218401ae539",
+                    "size": 442999498
+                },
+                {
+                    "path": "special_tokens_map.json",
+                    "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+                    "size": 112
+                },
+                {
+                    "path": "tokenizer_config.json",
+                    "sha256": "73f5e97ab29042bac49dc96f7b8a7a790994509bbd2fe3e9cd4f59affc46c2ce",
+                    "size": 86
+                },
+                {
+                    "path": "training_args.bin",
+                    "sha256": "8dc7cd7d95f8cd05cd11baa660b2c4082f4240a347d896e9f7d99b0c2ac40f38",
+                    "size": 1346
+                },
+                {
+                    "path": "vocab.txt",
+                    "sha256": "1df5f8da6ad6c56153c7a974c0b149bb7a0a6e332bcfa795c99deee6c1136ce2",
+                    "size": 304561
+                }
+            ],
+            "license": "MIT",
+            "name": "disambig-bert-unfactored-msa",
+            "package_type": "http",
+            "private": false,
+            "sha256": "95fee89f048311dafaf5cf2897f1416b3a1ef54866f75a13aab98a6973031107",
+            "size": 445036343,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.04.26/disambig_bert_unfactored-msa-1.0.1.zip",
+            "version": "1.0.1"
+        },
+        "disambig-mle-all": {
+            "dependencies": [
+                "disambig-mle-calima-msa-r13",
+                "disambig-mle-calima-egy-r13"
+            ],
+            "description": "All available MLE disambiguation models",
+            "name": "disambig-mle-all",
+            "package_type": "meta",
+            "private": false
+        },
+        "disambig-mle-calima-egy-r13": {
+            "dependencies": [
+                "morphology-db-egy-r13"
+            ],
+            "description": "MLE model for disambiguating Egyptian Arabic",
+            "destination": "disambig_mle/calima-egy-r13",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "7a71f85f07e46759dcc1c16dba64352d9932447759cf71ca3deae3729d85d23e",
+                    "size": 16919
+                },
+                {
+                    "path": "model.json",
+                    "sha256": "7db85a3adcf47b0f75c8daa5af51b03a68dc75a9a644cf85928ca8f79c9011c1",
+                    "size": 27170485
+                }
+            ],
+            "license": "GPL v2",
+            "name": "disambig-mle-calima-egy-r13",
+            "package_type": "http",
+            "private": false,
+            "sha256": "be845b7949cd87cae548af3b51b09713cbe32d946fa66033a0f7146941904d6b",
+            "size": 27187404,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/disambig_mle_calima-egy-r13-0.1.0.zip",
+            "version": "0.1.0"
+        },
+        "disambig-mle-calima-msa-r13": {
+            "dependencies": [
+                "morphology-db-msa-r13"
+            ],
+            "description": "MLE model for disambiguating Modern Standard Arabic",
+            "destination": "disambig_mle/calima-msa-r13",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "7a71f85f07e46759dcc1c16dba64352d9932447759cf71ca3deae3729d85d23e",
+                    "size": 16919
+                },
+                {
+                    "path": "model.json",
+                    "sha256": "e7d79e7744101b6933f9a4b41063d4b9934488fc8c8b6130a24467e0f0dfe9af",
+                    "size": 88707692
+                }
+            ],
+            "license": "GPL v2",
+            "name": "disambig-mle-calima-msa-r13",
+            "package_type": "http",
+            "private": false,
+            "sha256": "3173935ba752f842da20b8e95fea068cfb60218591a907552779c7a65ff42b3a",
+            "size": 88724611,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/disambig_mle_calima-msa-r13-0.2.5.zip",
+            "version": "0.2.5"
+        },
+        "disambig-ranking-cache-calima-egy-r13": {
+            "dependencies": [],
+            "description": "Disambiguation ranking cache synced with the calima-egy-r13 morphology database.",
+            "destination": "disambig_ranking_cache/calima-egy-r13",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "4e027b03a7b9766d23eb7fa64a2acd265b45364025ac9decd4782eb3b1171d4a",
+                    "size": 16599
+                },
+                {
+                    "path": "default_cache.pickle",
+                    "sha256": "508efd9fe9e0afe96e7a70f9e8af14b0ed8c37155282c0a18bf481440a8df43d",
+                    "size": 314592590
+                }
+            ],
+            "license": "GPL v2",
+            "name": "disambig-ranking-cache-calima-egy-r13",
+            "package_type": "http",
+            "private": true,
+            "sha256": "b75a465bd5d08e18a6d1b0515dacfb071cdfd27a77568e19b812cb7293966f67",
+            "size": 314609189,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.07.25/disambig_ranking_cache_calima-egy-r13-1.0.1.zip",
+            "version": "1.0.1"
+        },
+        "disambig-ranking-cache-calima-glf-01": {
+            "dependencies": [],
+            "description": "Disambiguation ranking cache synced with the calima-glf-01 morphology database.",
+            "destination": "disambig_ranking_cache/calima-glf-01",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "25fb60e0e59565106c6aa8eb6bd0492fb8cbe8211e5636bda2916de6ecdad886",
+                    "size": 251
+                },
+                {
+                    "path": "default_cache.pickle",
+                    "sha256": "9e919fb19012cbf76a5953f64ecfb1c7b5f94babaccd3d0a45ce86604a019c01",
+                    "size": 27154264
+                }
+            ],
+            "license": "CC BY 4.0",
+            "name": "disambig-ranking-cache-calima-glf-01",
+            "package_type": "http",
+            "private": true,
+            "sha256": "b76bad0469dbea8b84c2b77f9e1e31316781f40a612401890e7d9f76e92bacfd",
+            "size": 27154515,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.07.25/disambig_ranking_cache_calima-glf-01-1.0.1.zip",
+            "version": "1.0.1"
+        },
+        "disambig-ranking-cache-calima-lev-01": {
+            "dependencies": [],
+            "description": "Disambiguation ranking cache synced with the calima-lev-01 morphology database.",
+            "destination": "disambig_ranking_cache/calima-lev-01",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "25fb60e0e59565106c6aa8eb6bd0492fb8cbe8211e5636bda2916de6ecdad886",
+                    "size": 251
+                },
+                {
+                    "path": "default_cache.pickle",
+                    "sha256": "1debca5b66b26069ad1d16ac84ecd244a3981a68c9f6846da15353611f38bffc",
+                    "size": 22328738
+                }
+            ],
+            "license": "CC BY 4.0",
+            "name": "disambig-ranking-cache-calima-lev-01",
+            "package_type": "http",
+            "private": true,
+            "sha256": "dff600b80f15836c3e691c7c8c16522305f08bd0af60b919fa097eacf527d3f7",
+            "size": 22328989,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.07.25/disambig_ranking_cache_calima-lev-01-1.0.1.zip",
+            "version": "1.0.1"
+        },
+        "disambig-ranking-cache-calima-msa-r13": {
+            "dependencies": [],
+            "description": "Disambiguation ranking cache synced with the calima-msa-r13 morphology database.",
+            "destination": "disambig_ranking_cache/calima-msa-r13",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "4e027b03a7b9766d23eb7fa64a2acd265b45364025ac9decd4782eb3b1171d4a",
+                    "size": 16599
+                },
+                {
+                    "path": "default_cache.pickle",
+                    "sha256": "560914f9b939aad3d95096f4b28ea04088a6fab445c5bcdf6d29fbb5094f2299",
+                    "size": 526526109
+                }
+            ],
+            "license": "GPL v2",
+            "name": "disambig-ranking-cache-calima-msa-r13",
+            "package_type": "http",
+            "private": true,
+            "sha256": "cfbe647a2fc840e8433b243fdd6203a3da56a65fd7333ebd471cc3d1345b7ee0",
+            "size": 526542708,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.07.25/disambig_ranking_cache_calima-msa-r13-1.0.1.zip",
+            "version": "1.0.1"
+        },
+        "morphology-db-all": {
+            "dependencies": [
+                "morphology-db-msa-r13",
+                "morphology-db-msa-s31",
+                "morphology-db-glf-01",
+                "morphology-db-lev-01",
+                "morphology-db-egy-r13"
+            ],
+            "description": "All available morphology databases",
+            "name": "morphology-db-all",
+            "package_type": "meta",
+            "private": false
+        },
+        "morphology-db-egy-r13": {
+            "dependencies": [],
+            "description": "Database for analyzing Egyptian Arabic",
+            "destination": "morphology_db/calima-egy-r13",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "7a71f85f07e46759dcc1c16dba64352d9932447759cf71ca3deae3729d85d23e",
+                    "size": 16919
+                },
+                {
+                    "path": "morphology.db",
+                    "sha256": "9b4efa76bc81e2ae1ce84518d381903f4fd15cf4afd892cd3654bc06d26e2181",
+                    "size": 67238788
+                }
+            ],
+            "license": "GPL v2",
+            "name": "morphology-db-egy-r13",
+            "package_type": "http",
+            "private": false,
+            "sha256": "eb8a2d3a115cad819a808931e7fb941d54344096e563643ba742708892e862ac",
+            "size": 67255707,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/morphology_db_calima-egy-r13-0.2.0.zip",
+            "version": "0.2.0"
+        },
+        "morphology-db-glf-01": {
+            "dependencies": [
+                "morphology-db-glf-01"
+            ],
+            "description": "Database for analyzing Gulf Arabic",
+            "destination": "morphology_db/calima-glf-01",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "25fb60e0e59565106c6aa8eb6bd0492fb8cbe8211e5636bda2916de6ecdad886",
+                    "size": 251
+                },
+                {
+                    "path": "morphology.db",
+                    "sha256": "0b88b55d09eda8edc2f0009cb3f46d4b2ad8176cf5dc7a17a7b65439f7aaae7d",
+                    "size": 7976670
+                }
+            ],
+            "license": "CC BY 4.0",
+            "name": "morphology-db-glf-01",
+            "package_type": "http",
+            "private": false,
+            "sha256": "385a29aa4737335d6431768546aaaf7ecf848dfd4bef460c7e3358168c73c9b3",
+            "size": 7976921,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.30/morphology_db_calima-glf-01-0.1.0.zip",
+            "version": "0.1.0"
+        },
+        "morphology-db-lev-01": {
+            "dependencies": [
+                "morphology-db-lev-01"
+            ],
+            "description": "Database for analyzing Levantine Arabic",
+            "destination": "morphology_db/calima-lev-01",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "25fb60e0e59565106c6aa8eb6bd0492fb8cbe8211e5636bda2916de6ecdad886",
+                    "size": 251
+                },
+                {
+                    "path": "morphology.db",
+                    "sha256": "938b2f15af034cd1130afd30a142610e8602415a533aab3af403fa118210fc1f",
+                    "size": 10621699
+                }
+            ],
+            "license": "CC BY 4.0",
+            "name": "morphology-db-lev-01",
+            "package_type": "http",
+            "private": false,
+            "sha256": "34f012383f18196554ec38ec1d4e6c8d1cc767b25e00c397cd36c67afaf4c3c4",
+            "size": 10621950,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.05.30/morphology_db_calima-lev-01-0.1.0.zip",
+            "version": "0.1.0"
+        },
+        "morphology-db-msa-r13": {
+            "dependencies": [],
+            "description": "Database for analyzing Modern Standard Arabic",
+            "destination": "morphology_db/calima-msa-r13",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "7a71f85f07e46759dcc1c16dba64352d9932447759cf71ca3deae3729d85d23e",
+                    "size": 16919
+                },
+                {
+                    "path": "morphology.db",
+                    "sha256": "195bc25a333237a2126470da888d7936b59ed3729f9210e0a4194ba43497dd70",
+                    "size": 40471399
+                }
+            ],
+            "license": "GPL v2",
+            "name": "morphology-db-msa-r13",
+            "package_type": "http",
+            "private": false,
+            "sha256": "fe6531250c5529307627cc63ed56447cbb9968020d6ea3ab867e6ad9af94c738",
+            "size": 40488318,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/morphology_db_calima-msa-r13-0.4.0.zip",
+            "version": "0.4.0"
+        },
+        "ner-all": {
+            "dependencies": [
+                "ner-arabert"
+            ],
+            "description": "All available named-entity-recognition models",
+            "name": "ner-all",
+            "package_type": "meta",
+            "private": false
+        },
+        "ner-arabert": {
+            "dependencies": [],
+            "description": "Named Entity Recognition model generated by fine-tuning AraBERT",
+            "destination": "ner/arabert",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "e89489d914c159524a7cb0019026d2a50d15cf4ad1919de74a9545db3c2cbe19",
+                    "size": 3668
+                },
+                {
+                    "path": "config.json",
+                    "sha256": "be5eaeb68b047f2f4858b33b4e979731e52e3b07e57033154ae0d22446d57fbb",
+                    "size": 1016
+                },
+                {
+                    "path": "pytorch_model.bin",
+                    "sha256": "cb5e1e27cc7ddc9ef0400844de6b517579eec677750195e2413bb3bd1b02f43a",
+                    "size": 540851335
+                },
+                {
+                    "path": "special_tokens_map.json",
+                    "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+                    "size": 112
+                },
+                {
+                    "path": "tokenizer_config.json",
+                    "sha256": "359fdd360be3de14228b56e2ca9c6c940ff0b1a3dc88a5bf32bdeeb21ec7be9c",
+                    "size": 62
+                },
+                {
+                    "path": "training_args.bin",
+                    "sha256": "ee7cbe1a125e41a87e1be598ab3729f14df51012103dbfdc271ea78c6c3b69d5",
+                    "size": 1193
+                },
+                {
+                    "path": "vocab.txt",
+                    "sha256": "cae9cf28f899a06723f9bbdad52e89548b4e7a1d43cd2445de53697be10bdf70",
+                    "size": 780030
+                }
+            ],
+            "license": "AraBERT",
+            "name": "ner-arabert",
+            "package_type": "http",
+            "private": false,
+            "sha256": "1e480e6060b7e42c829bdadbe482c2291861661fd71f0de67e533715ab24d2c5",
+            "size": 541637416,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/ner_arabert-1.0.0.zip",
+            "version": "1.0.0"
+        },
+        "sentiment-analysis-all": {
+            "dependencies": [
+                "sentiment-analysis-arabert",
+                "sentiment-analysis-mbert"
+            ],
+            "description": "All available sentiment analysis models",
+            "name": "sentiment-analysis-all",
+            "package_type": "meta",
+            "private": false
+        },
+        "sentiment-analysis-arabert": {
+            "dependencies": [],
+            "description": "Sentiment Analysis model generated by fine-tuning AraBERT",
+            "destination": "sentiment_analysis/arabert",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "e89489d914c159524a7cb0019026d2a50d15cf4ad1919de74a9545db3c2cbe19",
+                    "size": 3668
+                },
+                {
+                    "path": "config.json",
+                    "sha256": "2ef796d378ba7e3ad3962f0dff79f76c7aa8d8dbbf8b943bc1bddaec2dc8242f",
+                    "size": 1284
+                },
+                {
+                    "path": "pytorch_model.bin",
+                    "sha256": "c27a902b17e688ee9bcf222d57d80be42b46bae81cf4c46348f95b388660672f",
+                    "size": 540832879
+                },
+                {
+                    "path": "special_tokens_map.json",
+                    "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+                    "size": 112
+                },
+                {
+                    "path": "tokenizer_config.json",
+                    "sha256": "a5064475340d80a560463f49921407d901eef3e89667a931eb81a186633eff4b",
+                    "size": 24
+                },
+                {
+                    "path": "training_args.bin",
+                    "sha256": "c8e7b8f874999f9f25fb6520e3775f2cdd3e36c7839bac1fb9844d884446d6cc",
+                    "size": 1291
+                },
+                {
+                    "path": "vocab.txt",
+                    "sha256": "fbace8865c1a22405852a9a50b2f80e07228f31b051194c9cdf4e5e3022d25d5",
+                    "size": 780039
+                }
+            ],
+            "license": "AraBERT",
+            "name": "sentiment-analysis-arabert",
+            "package_type": "http",
+            "private": false,
+            "sha256": "ea76482ddddcc56b2ad4ae47570362dceb63fea65c06494c30df57c8ebdaf556",
+            "size": 541619297,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/sentiment_analysis_arabert-1.0.0.zip",
+            "version": "1.0.0"
+        },
+        "sentiment-analysis-mbert": {
+            "dependencies": [],
+            "description": "Sentiment Analysis model generated by fine-tuning Multilingual BERT",
+            "destination": "sentiment_analysis/mbert",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+                    "size": 11358
+                },
+                {
+                    "path": "config.json",
+                    "sha256": "23a3125bba0a8f6736e8b1072a4f0345c76f7596930f21c10c06dc025d4fcc5d",
+                    "size": 1285
+                },
+                {
+                    "path": "pytorch_model.bin",
+                    "sha256": "71098c2432060fed54b095d9c086c336a23dc2a162ed8fe6e3601844ca13796f",
+                    "size": 711473265
+                },
+                {
+                    "path": "special_tokens_map.json",
+                    "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+                    "size": 112
+                },
+                {
+                    "path": "tokenizer_config.json",
+                    "sha256": "ec70da9a619641c3b56e62cb949b8a07f2fdafdb8389b2c72649fb235a5580b3",
+                    "size": 40
+                },
+                {
+                    "path": "training_args.bin",
+                    "sha256": "48ca658d75aa0b23ddf679993cefc111f083edbba093530ceee6e78492473fcd",
+                    "size": 1286
+                },
+                {
+                    "path": "vocab.txt",
+                    "sha256": "fe0fda7c425b48c516fc8f160d594c8022a0808447475c1a7c6d6479763f310c",
+                    "size": 995526
+                }
+            ],
+            "license": "Apache 2.0",
+            "name": "sentiment-analysis-mbert",
+            "package_type": "http",
+            "private": false,
+            "sha256": "24155653c60bd6de9bca9a5e99b5f8b54ce4c3b1aadc4de8cb8f8343d417c84b",
+            "size": 712482872,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/sentiment_analysis_mbert-1.0.0.zip",
+            "version": "1.0.0"
+        }
+    },
+    "version": "1.5.0"
+}
