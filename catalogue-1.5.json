@@ -1060,6 +1060,45 @@
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2022.03.21/morphology_db_calima-msa-r13-0.4.0.zip",
             "version": "0.4.0"
         },
+        "morphology-db-msa-s31": {
+            "dependencies": [],
+            "description": "Database for analyzing Modern Standard Arabic",
+            "destination": "morphology_db/calima-msa-s31",
+            "files": [
+                {
+                    "path": "LICENSE",
+                    "sha256": "7a71f85f07e46759dcc1c16dba64352d9932447759cf71ca3deae3729d85d23e",
+                    "size": 16919
+                },
+                {
+                    "path": "morphology.db.muddle",
+                    "sha256": "46af810dae83ddf2e0170503f93aedbd5924617c1caa852d65676b8445b9cc98",
+                    "size": 40472014
+                }
+            ],
+            "license": "LDC",
+            "name": "morphology-db-msa-s31",
+            "package_type": "http",
+            "post_install": {
+                "args": [
+                    "path"
+                ],
+                "instructions": "1) Download the original files from link.\n2) Run `camel_data -p calima-msa-s31 /path/to/downloaded/file\n`",
+                "steps": [
+                    {
+                        "action": "unmuddle",
+                        "muddled_path": "morphology.db.muddle",
+                        "output_path": "morphology.db",
+                        "source_path_index": 0
+                    }
+                ]
+            },
+            "private": false,
+            "sha256": "9d91ba6df8f65a90825a589b6140aac61a7e90be0847d8db07f4ba317af037c5",
+            "size": 40488933,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2032.02.03-2/morphology_db_calima-msa-s31-0.4.0.zip",
+            "version": "0.4.0"
+        },
         "ner-all": {
             "dependencies": [
                 "ner-arabert"
