@@ -142,18 +142,23 @@
             "files": [
                 {
                     "path": "did_pretrained_37.dill",
-                    "sha256": "c7f8281d885388122ac94d5807b166bfc98c3f5dc2e1e836dc7ce14f2b7758e5",
+                    "sha256": "5bfaa630b44335a981d5c0b4b80e39ec58f143f6cb52ba81fbe4b7a647f1a8dc",
                     "size": 48661660
                 },
                 {
                     "path": "did_pretrained_38.dill",
-                    "sha256": "51859d411f3fecf7005d5a9a75d300a5de1c8938dc9157e5311a05876607bdac",
+                    "sha256": "854de70042430aa2417331f758d4757236337455b5edb9cc0d82ba2c127d8a1b",
                     "size": 47980708
                 },
                 {
                     "path": "did_pretrained_39.dill",
-                    "sha256": "018e7186ebba5fcc26b3db9533f47cfa630b03974734c63cc39dbb5dd454040b",
-                    "size": 47980708
+                    "sha256": "24a1d8ca561f18347d0b31c04b46c1c79f2438a8101bf2cb9b2538979a098a9b",
+                    "size": 47981093
+                },
+                {
+                    "path": "did_pretrained_310.dill",
+                    "sha256": "9975ef268ab689a1a685c991842156553b7ae22882428306dc53ac0f943095a4",
+                    "size": 47981073
                 },
                 {
                     "path": "lm/char/ALE.arpa",
@@ -420,10 +425,10 @@
             "name": "dialectid-model26",
             "package_type": "http",
             "private": false,
-            "sha256": "50c55caf910413fea6b2e75986373ad9627c8bbaf82133e07eef8c5f935ec63e",
-            "size": 230301958,
-            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2023.02.03/dialectid_model26-1.0.0.zip",
-            "version": "1.0.0"
+            "sha256": "8ab54ad9ab53604a4f78b4c164eb1d0c42461856d77ea9543ce573379a1efff7",
+            "size": 278283416,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2023.04.06/dialectid_model26-1.1.0.zip",
+            "version": "1.1.0"
         },
         "dialectid-model6": {
             "dependencies": [],
@@ -432,18 +437,23 @@
             "files": [
                 {
                     "path": "did_pretrained_37.dill",
-                    "sha256": "4308d615ecf56dfdac0d60a2244530169a647a7d71f34db9064b29900ae8de57",
+                    "sha256": "76a42589d3b68944151a2c70e5ab449240dd6c2775c2f257477e5b1962d17730",
                     "size": 12774165
                 },
                 {
                     "path": "did_pretrained_38.dill",
-                    "sha256": "8f48a6025a5b837099859defa3be178b99bfdc213e8d3771ee123d4fe63f5544",
+                    "sha256": "6b28a3d778eb62a392c2cb194246bcf95cf9f8b4a598d91c9442f16ba8ffe088",
                     "size": 12385448
                 },
                 {
                     "path": "did_pretrained_39.dill",
-                    "sha256": "03fa690ab7e619049a38ac7eb580db6556662e74351bea075503013a30f20236",
-                    "size": 12385448
+                    "sha256": "a70288b573ca1d914af919165070305fedaa30a8f55480bd99b2d843e963f3f1",
+                    "size": 12385563
+                },
+                {
+                    "path": "did_pretrained_310.dill",
+                    "sha256": "448fb2115a7ed87aed98fcc47cbb6f1ff6a62cb928a0e510af9f598ee48b47a2",
+                    "size": 12385561
                 },
                 {
                     "path": "lm/char/BEI.arpa",
@@ -510,10 +520,10 @@
             "name": "dialectid-model6",
             "package_type": "http",
             "private": false,
-            "sha256": "f46fb2e0c2b95313b8a999042bafe0bea63a998da3488d2c63b29772b10ae2fa",
-            "size": 117651622,
-            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2023.02.03/dialectid_model6-1.0.0.zip",
-            "version": "1.0.0"
+            "sha256": "c72403ba92ea300d527ee8a182cfdf99a719a5119e4859fec2c3a1effb137a3a",
+            "size": 130037298,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2023.04.06/dialectid_model6-1.1.0.zip",
+            "version": "1.1.0"
         },
         "disambig-bert-unfactored-all": {
             "dependencies": [
@@ -855,16 +865,16 @@
                 },
                 {
                     "path": "default_cache.pickle",
-                    "sha256": "43410cfe43e755dcc52e9f4216743b57d878ae896b37c7ec6ecb75ede278a7ab",
-                    "size": 317521810
+                    "sha256": "0bf3fb653923f75fa7c41e78832d44722048e4e6cecffac4bc921b0abf362f80",
+                    "size": 319987393
                 }
             ],
             "license": "GPL v2",
             "name": "disambig-ranking-cache-calima-egy-r13",
             "package_type": "http",
             "private": true,
-            "sha256": "4cf85e3a6d0addd9bd3f6d0e796f89a50a746e7bb7ce3fd82cdcbaf64aec6cec",
-            "size": 317538409,
+            "sha256": "301d3b086cfb41ffa6bdde16e54ed2910b42d1b98296d40af110d9e9c733e65b",
+            "size": 320003992,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2023.03.17/disambig_ranking_cache_calima-egy-r13-1.1.0.zip",
             "version": "1.1.0"
         },
@@ -880,16 +890,16 @@
                 },
                 {
                     "path": "default_cache.pickle",
-                    "sha256": "5637b936829f3826e51ee0088b2592ed8195f1c5f91920042c5d79f821d49a95",
-                    "size": 28181492
+                    "sha256": "228fbf8b4eb6145e10827e498b8043c61d187e5ecf46d288f0855c3a8a938a4f",
+                    "size": 28653438
                 }
             ],
             "license": "CC BY 4.0",
             "name": "disambig-ranking-cache-calima-glf-01",
             "package_type": "http",
             "private": true,
-            "sha256": "b78c403251b4e088ab07a3af7247e4742943055a2d6d943e9940ce12ff5b347d",
-            "size": 28181743,
+            "sha256": "8000c3ee688a1dbf018e37c18af95dea2fc2e206c17a212bc17b069fcc06e802",
+            "size": 28653689,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2023.03.17/disambig_ranking_cache_calima-glf-01-1.1.0.zip",
             "version": "1.1.0"
         },
@@ -905,16 +915,16 @@
                 },
                 {
                     "path": "default_cache.pickle",
-                    "sha256": "2a619ea5684260f2e2ebad95247092e8cda5b91535b5463195ba149217432366",
-                    "size": 23453298
+                    "sha256": "22b079160000deb3c03b7dceedad374e0cfae833b96b38f33280a7943b7a67ae",
+                    "size": 23196037
                 }
             ],
             "license": "CC BY 4.0",
             "name": "disambig-ranking-cache-calima-lev-01",
             "package_type": "http",
             "private": true,
-            "sha256": "5997a3cdaaf38d35680ba8557ec810714d1903d74691e3294f0de98dbf25f5c3",
-            "size": 23453549,
+            "sha256": "1d9b07c6819e31cfaa34c61da7944114360792c957f0efe2521d4660a94c49ac",
+            "size": 23196288,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2023.03.17/disambig_ranking_cache_calima-lev-01-1.1.0.zip",
             "version": "1.1.0"
         },
@@ -930,16 +940,16 @@
                 },
                 {
                     "path": "default_cache.pickle",
-                    "sha256": "560914f9b939aad3d95096f4b28ea04088a6fab445c5bcdf6d29fbb5094f2299",
-                    "size": 526526109
+                    "sha256": "94437393dae2ea40d2cad47da0ffa03b010d2e177252530e390280f0f399d5ec",
+                    "size": 556283131
                 }
             ],
             "license": "GPL v2",
             "name": "disambig-ranking-cache-calima-msa-r13",
             "package_type": "http",
             "private": true,
-            "sha256": "cfbe647a2fc840e8433b243fdd6203a3da56a65fd7333ebd471cc3d1345b7ee0",
-            "size": 526542708,
+            "sha256": "ab68c1eb27d157507b8616e04724b7502dd356ff89c83d9b4836d768aa9b8d88",
+            "size": 556299730,
             "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2023.03.17/disambig_ranking_cache_calima-msa-r13-1.1.0.zip",
             "version": "1.1.0"
         },
@@ -1280,5 +1290,5 @@
             "version": "1.0.0"
         }
     },
-    "version": "1.5.0"
+    "version": "1.5.1"
 }
