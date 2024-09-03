@@ -142,23 +142,33 @@
             "files": [
                 {
                     "path": "did_pretrained_37.dill",
-                    "sha256": "5bfaa630b44335a981d5c0b4b80e39ec58f143f6cb52ba81fbe4b7a647f1a8dc",
-                    "size": 48661660
+                    "sha256": "a651523132d1d80e72f93b21cf55e097ca4f6d3403a7adcc7956b2ec3791e412",
+                    "size": 48661694
                 },
                 {
                     "path": "did_pretrained_38.dill",
-                    "sha256": "854de70042430aa2417331f758d4757236337455b5edb9cc0d82ba2c127d8a1b",
-                    "size": 47980708
-                },
-                {
-                    "path": "did_pretrained_39.dill",
-                    "sha256": "24a1d8ca561f18347d0b31c04b46c1c79f2438a8101bf2cb9b2538979a098a9b",
+                    "sha256": "131aaf5cc7ad2b02930f657d8da23c9e4bb8e7dcb986a02f4216701b5a98dcb1",
                     "size": 47981093
                 },
                 {
+                    "path": "did_pretrained_39.dill",
+                    "sha256": "8223810fa75775a27efb81ce94caec6ff0629124bdc166e516cc7e26c2dda07c",
+                    "size": 47208000
+                },
+                {
                     "path": "did_pretrained_310.dill",
-                    "sha256": "9975ef268ab689a1a685c991842156553b7ae22882428306dc53ac0f943095a4",
-                    "size": 47981073
+                    "sha256": "a52c50d3be60c1f5084b4b884b93fb9df09a34b7d233c0b7ca70fbef9663379d",
+                    "size": 47207980
+                },
+                {
+                    "path": "did_pretrained_311.dill",
+                    "sha256": "93df65ea84100a56bed0a13cf89535cb1696057d618e52f55a5b8a4a1a1a3908",
+                    "size": 47208299
+                },
+                {
+                    "path": "did_pretrained_312.dill",
+                    "sha256": "83194f4ef323029355a0713ea3f51026661ce7b2b99931c297b44739ef364f6f",
+                    "size": 47208265
                 },
                 {
                     "path": "lm/char/ALE.arpa",
@@ -425,10 +435,10 @@
             "name": "dialectid-model26",
             "package_type": "http",
             "private": false,
-            "sha256": "8ab54ad9ab53604a4f78b4c164eb1d0c42461856d77ea9543ce573379a1efff7",
-            "size": 278283416,
-            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2023.04.06/dialectid_model26-1.1.0.zip",
-            "version": "1.1.0"
+            "sha256": "7926fee6f750bd18518ccf4135fa31d8b6b3503455843c9fda51741c06471cdc",
+            "size": 371154213,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2024.09.02/dialectid_model26-1.1.1.zip",
+            "version": "1.1.1"
         },
         "dialectid-model6": {
             "dependencies": [],
@@ -437,23 +447,33 @@
             "files": [
                 {
                     "path": "did_pretrained_37.dill",
-                    "sha256": "76a42589d3b68944151a2c70e5ab449240dd6c2775c2f257477e5b1962d17730",
-                    "size": 12774165
+                    "sha256": "bee73b7cfca670ab200ca32586dbd70ea9172f2642c75911aa17e580989d17bf",
+                    "size": 12774199
                 },
                 {
                     "path": "did_pretrained_38.dill",
-                    "sha256": "6b28a3d778eb62a392c2cb194246bcf95cf9f8b4a598d91c9442f16ba8ffe088",
-                    "size": 12385448
-                },
-                {
-                    "path": "did_pretrained_39.dill",
-                    "sha256": "a70288b573ca1d914af919165070305fedaa30a8f55480bd99b2d843e963f3f1",
+                    "sha256": "05503810c74d1305b3296d7aa898a0402f7dc499c36375309ef4fbb179ae3a2e",
                     "size": 12385563
                 },
                 {
+                    "path": "did_pretrained_39.dill",
+                    "sha256": "06132748b88f6862db21fce72e0a57bae388a2f2d9f0e5cb89c1978fe4d55b75",
+                    "size": 11942255
+                },
+                {
                     "path": "did_pretrained_310.dill",
-                    "sha256": "448fb2115a7ed87aed98fcc47cbb6f1ff6a62cb928a0e510af9f598ee48b47a2",
-                    "size": 12385561
+                    "sha256": "18ab6d5ef7f8acb5a9ed2130fd3f546ea23b3be380248771cc3169ccaa0de24f",
+                    "size": 11942253
+                },
+                {
+                    "path": "did_pretrained_311.dill",
+                    "sha256": "bfab93ea8abbd9217c90862ab2366433940a88f564b44be3113377dfc0a1b4b2",
+                    "size": 11942393
+                },
+                {
+                    "path": "did_pretrained_312.dill",
+                    "sha256": "b35f2ee356417120217e6ac8b58128fab03429d41669cb8015e99b1f3d18722d",
+                    "size": 11942375
                 },
                 {
                     "path": "lm/char/BEI.arpa",
@@ -520,10 +540,10 @@
             "name": "dialectid-model6",
             "package_type": "http",
             "private": false,
-            "sha256": "c72403ba92ea300d527ee8a182cfdf99a719a5119e4859fec2c3a1effb137a3a",
-            "size": 130037298,
-            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2023.04.06/dialectid_model6-1.1.0.zip",
-            "version": "1.1.0"
+            "sha256": "cb9bf348e8c5b9bb72d3622d05932652672c0fcac8fce08741bb2049043aa6bb",
+            "size": 153035599,
+            "url": "https://github.com/CAMeL-Lab/camel-tools-data/releases/download/2024.09.02/dialectid_model6-1.1.1.zip",
+            "version": "1.1.1"
         },
         "disambig-bert-unfactored-all": {
             "dependencies": [
@@ -1290,5 +1310,5 @@
             "version": "1.0.0"
         }
     },
-    "version": "1.5.1"
+    "version": "1.5.2"
 }
